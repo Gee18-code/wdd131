@@ -39,17 +39,8 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
-}
-
-main {
     display: grid;
     gap: 1rem;
-}
-
-.card {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 10px;
 }
 
 .card {
