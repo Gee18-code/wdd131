@@ -1,0 +1,74 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#course-title {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #1d3557;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main {
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 1rem auto;
+}
+
+footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
