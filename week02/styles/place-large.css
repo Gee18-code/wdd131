@@ -1,0 +1,30 @@
+@media screen and (min-width: 768px) {
+
+    main {
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 250px;
+        background-color: rgba(255,255,255,0.9);
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 250px;
+        background-color: rgba(255,255,255,0.9);
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+
+    .weather-icon {
+        display: none;
+    }
+}

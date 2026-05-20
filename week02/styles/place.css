@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #008753;
+    --secondary-color: #ffffff;
+    --accent-color: #000000;
+
+    --heading-font: Arial, sans-serif;
+    --body-font: Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+picture img {
+    width: 100%;
+    display: block;
+}
+
+section {
+    padding: 1rem;
+    margin: 1rem;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+.weather-icon {
+    width: 50px;
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
