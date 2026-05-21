@@ -38,7 +38,7 @@ h1 {
 nav {
   display: flex;
   flex-direction: column;
-  list-style: none;
+  
 }
 
 nav a {
