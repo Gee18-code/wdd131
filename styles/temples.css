@@ -35,13 +35,13 @@ h1 {
   content: "✖";
 }
 
-.navigation {
+nav {
   display: flex;
   flex-direction: column;
   list-style: none;
 }
 
-.navigation a {
+nav a {
   display: none;
   padding: 1rem;
   color: white;
@@ -49,11 +49,11 @@ h1 {
   text-align: center;
 }
 
-.navigation a:hover {
+nav a:hover {
   background-color: #ffffff33;
 }
 
-.navigation.open a {
+nav.open a {
   display: block;
 }
 
