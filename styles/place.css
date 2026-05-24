@@ -42,3 +42,23 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.card p {
+    margin: 0.5rem 0;
+}
+
+.weather-icon {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
