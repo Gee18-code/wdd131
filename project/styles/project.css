@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    --black: #111111;
+    --cream: #f5f1e8;
+    --gold: #c9a227;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--cream);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 4px solid var(--gold);
+}
+
+header img {
+    width: 180px;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--gold);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+}
+
+.hero {
+    min-height: 500px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 4rem 1.5rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-bottom: 5px solid var(--gold);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-label {
+    color: var(--gold);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.hero p:not(.hero-label) {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--black);
+    padding: 0.85rem 1.5rem;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--white);
+}
+
+.featured {
+    padding: 3rem 0;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 2rem;
+}
+
+.section-label {
+    color: var(--gold);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-heading h2 {
+    margin: 0 0 0.75rem;
+}
+
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.vehicle-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-top: 4px solid var(--gold);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.vehicle-card h2 {
+    margin-top: 0;
+}
+
+.vehicle-card .button {
+    margin-top: 1rem;
+}
+
+@media (min-width: 32rem) {
+    .vehicle-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 60rem) {
+    .vehicle-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font: inherit;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    margin-top: 1.5rem;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+form button:hover,
+form button:focus {
+    background-color: var(--black);
+    color: var(--white);
+}  
+
+
+@media (max-width: 31.99rem) {
+    nav {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+    }
+}
+
+.vehicle-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}

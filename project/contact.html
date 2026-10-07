@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact GEE Autos to make a vehicle inquiry.">
+    <title>GEE Autos | Contact</title>
+    <link rel="stylesheet" href="styles/project.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/gee-logo.png" alt="GEE Autos logo">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Contact GEE Autos</h1>
+
+            <p>
+                Interested in a vehicle? Send us an inquiry and let us know
+                what you are looking for.
+            </p>
+        </section>
+
+        <section>
+            <h2>Vehicle Inquiry</h2>
+
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="vehicle">Vehicle of Interest</label>
+                <select id="vehicle" name="vehicle">
+                    <option value="">Select a vehicle</option>
+                    <option value="lexus-rx-350">2021 Lexus RX 350</option>
+                    <option value="toyota-camry">2020 Toyota Camry</option>
+                    <option value="mercedes-c-class">2022 Mercedes-Benz C-Class</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6"></textarea>
+
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GEE Autos</p>
+        <a href="references.html">References</a>
+    </footer>
+    <script src="scripts/project.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    --black: #111111;
+    --cream: #F5F1E8;
+    --gold: #C9A227;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--cream);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 5px solid var(--gold);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-left: 5px solid var(--gold);
+    border-radius: 8px;
+}
+
+h2 {
+    color: var(--black);
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 0.5rem;
+}
+
+strong {
+    color: var(--black);
+}
+
+.wireframe {
+    border: 3px solid var(--black);
+    padding: 1rem;
+    margin: 1rem 0 2rem;
+    background-color: #eeeeee;
+}
+
+.wire-header,
+.wire-hero,
+.wire-content,
+.wire-footer {
+    border: 2px dashed var(--black);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.wire-header {
+    background-color: var(--gold);
+}
+
+.wire-hero {
+    min-height: 120px;
+    display: grid;
+    place-items: center;
+}
+
+.wire-footer {
+    margin-bottom: 0;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.mobile-wireframe {
+    max-width: 350px;
+}
+
+.desktop-wireframe {
+    max-width: 800px;
+}
+
+.wire-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.wire-row .wire-content {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .wire-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+.site-logo {
+    display: block;
+    width: min(300px, 90%);
+    height: auto;
+    margin: 0 auto 1rem;
+}
