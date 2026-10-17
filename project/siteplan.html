@@ -1,134 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GEE Autos website planning document for a responsive vehicle discovery and inquiry website.">
-    <meta name="author" content="Gerald Abiayi">
-    <title>GEE Autos | Site Plan</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/siteplan.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MedShelf Lagos | Site Plan</title>
+  <meta name="description" content="Website planning document for MedShelf Lagos, an online catalog of medical supplies for clinics and pharmacies in Lagos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
 </head>
-
 <body>
+  <header>
+    <svg class="logo" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="MedShelf Lagos logo: a medical cross on a shelf">
+      <rect x="2" y="2" width="60" height="60" rx="10" fill="#0b5d66"></rect>
+      <rect x="27" y="12" width="10" height="26" fill="#ffffff"></rect>
+      <rect x="19" y="20" width="26" height="10" fill="#ffffff"></rect>
+      <rect x="12" y="44" width="40" height="6" fill="#f2b84b"></rect>
+    </svg>
+    <div>
+      <h1>MedShelf Lagos</h1>
+      <p>Website Plan for WDD 131 W05 Project</p>
+    </div>
+  </header>
 
-    <header>
-        <img class="site-logo" src="images/gee-logo.png" alt="GEE Autos logo">
-        <p>Website Planning Document</p>
-    </header>
+  <nav aria-label="Plan sections">
+    <ul>
+      <li><a href="#site-name">Site name</a></li>
+      <li><a href="#purpose">Purpose</a></li>
+      <li><a href="#scenarios">Scenarios</a></li>
+      <li><a href="#colors">Colors</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#wireframes">Wireframes</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <section>
-            <h1>Site Name</h1>
-            
-            <h2>GEE Autos</h2>
-            
-            <p>
-                GEE Autos is a vehicle discovery and inquiry website that helps
-                customers explore quality vehicles and learn more about their
-                features and specifications.
-            </p>
-            
-            <p>
-                I chose the name GEE Autos because it is simple, memorable, and
-                represents a modern automotive brand.
-            </p>
-        </section>
+  <main>
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <p><strong>MedShelf Lagos</strong></p>
+      <p>"Med" signals medical supplies and "Shelf" suggests an organized, browsable catalog, like a well-stocked storeroom. "Lagos" tells visitors the service is local to the city.</p>
+      <p>Optional domain availability: medshelf-lagos.com</p>
+    </section>
 
-        <section>
-            <h2>Site Purpose</h2>
-            
-            <p>
-                The purpose of GEE Autos is to provide visitors with an easy way
-                to browse vehicles, compare important vehicle information, and
-                submit inquiries about vehicles they are interested in.
-            </p>
-            <p>
-                The website will provide vehicle listings, specifications,
-                pricing information, featured vehicles, and a contact form for
-                customers who want to make an inquiry.
-            </p>
-        </section>
+    <section id="purpose">
+      <h2>Site Purpose</h2>
+      <p>The site gives clinics, pharmacies, and small hospitals in Lagos one place to browse medical supplies, check what is in stock, and request a quote. It provides:</p>
+      <ul>
+        <li>A product catalog grouped by category, such as gloves, syringes, and diagnostic kits</li>
+        <li>Stock availability and delivery information for Lagos areas</li>
+        <li>A quote request form for bulk orders</li>
+        <li>Contact details for the procurement team</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Scenarios</h2>
+    <section id="scenarios">
+      <h2>Scenarios</h2>
+      <p>Questions a visitor from the target audience would ask:</p>
+      <ul>
+        <li>Which brands of examination gloves are in stock, and how much do they cost per box?</li>
+        <li>How do I request a bulk quote for my clinic and how soon will I get a reply?</li>
+        <li>Do you deliver to the Lagos Mainland and the Island, and how long does it take?</li>
+        <li>Where can I find the phone number or email of the procurement team?</li>
+      </ul>
+    </section>
 
-            <ul> 
-                <li> Which vehicles are currently available and what are their prices?</li>
-                <li> What are the features and specifications of a particular vehicle?</li>
-                <li> How can i contact GEE Autos to make an inquiry about a vehicle?</li>
-                <li> How can i know what to budget a particular vehicle?</li>
-            </ul>
-        </section>
+    <section id="colors">
+      <h2>Color Scheme</h2>
+      <p>This page uses the same colors as the planned site.</p>
+      <table>
+        <caption>Site colors and where they are used</caption>
+        <thead>
+          <tr>
+            <th scope="col">Color</th>
+            <th scope="col">Hex</th>
+            <th scope="col">Where it is used</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><span class="swatch swatch-teal"></span> Deep teal</th>
+            <td>#0B5D66</td>
+            <td>Header and footer backgrounds, headings, links</td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="swatch swatch-mint"></span> Mint white</th>
+            <td>#EAF4F4</td>
+            <td>Page background and section panels</td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="swatch swatch-amber"></span> Amber</th>
+            <td>#F2B84B</td>
+            <td>Buttons and accent lines, always with dark text</td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="swatch swatch-ink"></span> Ink</th>
+            <td>#17262B</td>
+            <td>Paragraph text and button text</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-        <section>
-            <h2>Color Schema</h2>
-            
-            <p>
-                The GEE Autos color scheme uses black, cream, and gold to create
-                a clean, modern, and premium automotive appearance.
-            </p>
-            
-            <ul>
-                <li><strong>Black (#111111):</strong> Used for headings, navigation, and important text.</li>
-                <li><strong>Cream (#F5F1E8):</strong> Used as the primary page background.</li>
-                <li><strong>Gold (#C9A227):</strong> Used for accents, buttons, borders, and highlights.</li>
-                <li><strong>White (#FFFFFF):</strong> Used for cards and text placed on dark backgrounds.</li>
-            </ul>
-        
-        </section>
-        <p>
-            GEE Autos will use two primary fonts to create a modern and very reliable style.
-        </p>
+    <section id="typography">
+      <h2>Typography</h2>
+      <p>This page uses the same fonts as the planned site.</p>
+      <ul>
+        <li><strong class="sample-heading">Poppins (600 and 700)</strong>: page titles, headings, navigation, and buttons.</li>
+        <li><strong>Open Sans (400 and 600)</strong>: paragraphs, product descriptions, tables, and form labels.</li>
+      </ul>
+      <p>Both fonts load from Google Fonts. Fallbacks are Arial and sans-serif so text stays readable if the fonts fail to load.</p>
+    </section>
 
+    <section id="wireframes">
+      <h2>Wireframes</h2>
+      <p>Home page layouts for mobile and larger screens.</p>
 
-        <ul> 
-            <li>
-                <strong>Montserrat:</strong> Used for headings, navigation, buttons, and important titles.
-            </li>
+      <div class="wireframes">
+        <figure>
+          <div class="wf wf-mobile" role="img" aria-label="Mobile home page wireframe: header with logo and menu button, hero banner with button, a single column of three category cards, and a footer.">
+            <div class="wf-box wf-header">Logo + menu button</div>
+            <div class="wf-box wf-hero">Hero: tagline + Request a quote</div>
+            <div class="wf-box wf-card">Category card</div>
+            <div class="wf-box wf-card">Category card</div>
+            <div class="wf-box wf-card">Category card</div>
+            <div class="wf-box wf-footer">Footer: contact + hours</div>
+          </div>
+          <figcaption>Mobile view (single column)</figcaption>
+        </figure>
 
-            <li> 
-                <strong>open Sans:</strong> Used for paragraphs, descriptions, forms, and general body content.
-            </li>
-        </ul>
-
-        <section>
-            <h2>Wireframes</h2>
-            <h3>Mobile View</h3>
-            <div class="wireframe mobile-wireframe">
-                <div class="wire-header">Logo / Menu</div>
-                <div class="wire-hero">Hero Image</div>
-                <div class="wire-content">Featured Vehicles</div>
-                <div class="wire-content">About GEE Autos</div>
-                <div class="wire-footer">Footer</div>
+        <figure>
+          <div class="wf wf-desktop" role="img" aria-label="Desktop home page wireframe: header with logo and navigation links, wide hero banner with button, a row of three category cards, a two-column area with delivery information and a quote form summary, and a footer.">
+            <div class="wf-box wf-header">Logo | Home | Catalog | Delivery | Contact</div>
+            <div class="wf-box wf-hero">Hero: tagline + Request a quote</div>
+            <div class="wf-row">
+              <div class="wf-box wf-card">Category card</div>
+              <div class="wf-box wf-card">Category card</div>
+              <div class="wf-box wf-card">Category card</div>
             </div>
-            
-            <h3>Desktop View</h3>
-            
-            <div class="wireframe desktop-wireframe">
-                <div class="wire-header">Logo &nbsp;&nbsp; Navigation</div>
-                <div class="wire-hero">Large Hero Image</div>
-                <div class="wire-row">
-                    <div class="wire-content">Vehicle 1</div>
-                    <div class="wire-content">Vehicle 2</div>
-                    <div class="wire-content">Vehicle 3</div>
-                </div>
-                <div class="wire-content">About GEE Autos</div>
-                <div class="wire-footer">Footer</div>
+            <div class="wf-row">
+              <div class="wf-box wf-half">Delivery areas</div>
+              <div class="wf-box wf-half">Quote form preview</div>
             </div>
-        </section>
+            <div class="wf-box wf-footer">Footer: contact + hours</div>
+          </div>
+          <figcaption>Desktop view (wider layout)</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 
-
-    </main>
-    
-    <footer>
-        <p>&copy; 2026 GEE Autos</p>
-        <a href="references.html">References</a>
-    </footer>
-
+  <footer>
+    <p>&copy; 2026 Gerald Chukwuebuka Abiayi | WDD 131 | Brigham Young University-Idaho</p>
+  </footer>
 </body>
 </html>
-
-
